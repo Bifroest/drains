@@ -7,13 +7,16 @@ import org.apache.commons.collections4.IteratorUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.goodgame.profiling.commons.boot.interfaces.Environment;
 import com.goodgame.profiling.names.NamingScheme;
+
 import java.io.Closeable;
 import java.util.ArrayList;
 import java.util.List;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import io.bifroest.commons.boot.interfaces.Environment;
 
 public class DrainFactory<E extends Environment> {
     private static final Logger log = LogManager.getLogger();

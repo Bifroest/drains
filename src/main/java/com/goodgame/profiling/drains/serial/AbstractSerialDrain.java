@@ -1,6 +1,5 @@
 package com.goodgame.profiling.drains.serial;
 
-import com.goodgame.profiling.commons.logging.LogService;
 import com.goodgame.profiling.drains.Drain;
 
 import java.io.IOException;
@@ -8,6 +7,8 @@ import java.util.Collection;
 import java.util.Collections;
 
 import org.slf4j.Logger;
+
+import io.bifroest.commons.logging.LogService;
 
 public abstract class AbstractSerialDrain implements Drain {
     private final Logger logger = LogService.getLogger(AbstractSerialDrain.class);

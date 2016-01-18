@@ -17,12 +17,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.ThreadContext;
 
-import com.goodgame.profiling.commons.model.Metric;
-import com.goodgame.profiling.commons.statistics.eventbus.EventBusManager;
-import com.goodgame.profiling.commons.statistics.percentile.PercentileEvent;
-import com.goodgame.profiling.commons.statistics.percentile.PercentileTracker;
 import com.goodgame.profiling.drains.Drain;
 import com.goodgame.profiling.drains.statistics.AsyncDrainQueueSizeChangedEvent;
+
+import io.bifroest.commons.model.Metric;
+import io.bifroest.commons.statistics.eventbus.EventBusManager;
+import io.bifroest.commons.statistics.percentile.PercentileEvent;
+import io.bifroest.commons.statistics.percentile.PercentileTracker;
 
 public class AsyncDrain implements Drain {
     private static final Logger log = LogManager.getLogger();

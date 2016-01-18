@@ -1,13 +1,15 @@
 package com.goodgame.profiling.drains;
 
-import com.goodgame.profiling.commons.logging.LogService;
 import org.json.JSONObject;
 
-import com.goodgame.profiling.commons.systems.configuration.EnvironmentWithJSONConfiguration;
 import com.goodgame.profiling.names.EnumerateDrainByTypeScheme;
 import com.goodgame.profiling.names.NamingScheme;
 import com.goodgame.profiling.names.OverrideWithDrainId;
+
 import org.slf4j.ext.XLogger;
+
+import io.bifroest.commons.configuration.EnvironmentWithJSONConfiguration;
+import io.bifroest.commons.logging.LogService;
 
 public class DrainCreator< E extends EnvironmentWithJSONConfiguration > {
     public static final XLogger logger = LogService.getXLogger(DrainCreator.class);

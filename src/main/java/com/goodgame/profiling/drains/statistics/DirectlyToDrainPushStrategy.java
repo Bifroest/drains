@@ -10,13 +10,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
 
-import com.goodgame.profiling.commons.model.Metric;
-import com.goodgame.profiling.commons.systems.configuration.EnvironmentWithJSONConfiguration;
-import com.goodgame.profiling.commons.systems.statistics.EnvironmentWithStatisticsGatherer;
-import com.goodgame.profiling.commons.systems.statistics.push_strategy.with_task.StatisticsPushStrategyWithTask;
 import com.goodgame.profiling.drains.Drain;
 import com.goodgame.profiling.drains.DrainCreator;
 import com.goodgame.profiling.drains.DrainFactory;
+
+import io.bifroest.commons.configuration.EnvironmentWithJSONConfiguration;
+import io.bifroest.commons.model.Metric;
+import io.bifroest.commons.statistics.EnvironmentWithStatisticsGatherer;
+import io.bifroest.commons.statistics.push_strategy.with_task.StatisticsPushStrategyWithTask;
 
 public class DirectlyToDrainPushStrategy<E extends EnvironmentWithStatisticsGatherer & EnvironmentWithJSONConfiguration>
     extends StatisticsPushStrategyWithTask<E> {

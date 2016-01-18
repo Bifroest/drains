@@ -1,18 +1,19 @@
 package com.goodgame.profiling.drains.repeated_flush;
 
-import com.goodgame.profiling.commons.logging.LogService;
 
 import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
-import com.goodgame.profiling.commons.model.Metric;
-import com.goodgame.profiling.commons.systems.cron.TaskRunner;
-import com.goodgame.profiling.commons.systems.cron.TaskRunner.TaskID;
 import com.goodgame.profiling.drains.AbstractWrappingDrain;
 import com.goodgame.profiling.drains.Drain;
 
 import org.slf4j.Logger;
+
+import io.bifroest.commons.cron.TaskRunner;
+import io.bifroest.commons.cron.TaskRunner.TaskID;
+import io.bifroest.commons.logging.LogService;
+import io.bifroest.commons.model.Metric;
 
 public class RepeatedFlushDrain extends AbstractWrappingDrain {
     private static final Logger logger = LogService.getLogger(RepeatedFlushDrain.class);

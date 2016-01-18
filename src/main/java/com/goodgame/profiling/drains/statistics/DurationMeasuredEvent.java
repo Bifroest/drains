@@ -8,7 +8,7 @@ package com.goodgame.profiling.drains.statistics;
 import java.time.Instant;
 import java.util.Objects;
 
-import com.goodgame.profiling.commons.statistics.eventbus.EventBusManager;
+import io.bifroest.commons.statistics.eventbus.EventBusManager;
 
 /**
  *

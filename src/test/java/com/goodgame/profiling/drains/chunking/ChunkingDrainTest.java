@@ -9,9 +9,9 @@ import java.util.List;
 
 import org.junit.Test;
 
-import com.goodgame.profiling.commons.model.Metric;
 import com.goodgame.profiling.drains.StubDrain;
-import com.goodgame.profiling.drains.chunking.ChunkingDrain;
+
+import io.bifroest.commons.model.Metric;
 
 public class ChunkingDrainTest {
     private StubDrain stub = new StubDrain();

@@ -3,9 +3,10 @@ package com.goodgame.profiling.drains.serial.failfirst;
 import java.io.IOException;
 import java.util.List;
 
-import com.goodgame.profiling.commons.model.Metric;
 import com.goodgame.profiling.drains.Drain;
 import com.goodgame.profiling.drains.serial.AbstractSerialDrain;
+
+import io.bifroest.commons.model.Metric;
 
 public class SerialFailFirstDrain extends AbstractSerialDrain {
     public SerialFailFirstDrain( List<Drain> inners ) {

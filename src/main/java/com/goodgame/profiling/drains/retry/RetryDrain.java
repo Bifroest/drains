@@ -8,9 +8,10 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.goodgame.profiling.commons.model.Metric;
 import com.goodgame.profiling.drains.AbstractWrappingDrain;
 import com.goodgame.profiling.drains.Drain;
+
+import io.bifroest.commons.model.Metric;
 
 public class RetryDrain extends AbstractWrappingDrain {
     private static final Logger log = LogManager.getLogger();

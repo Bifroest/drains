@@ -3,7 +3,8 @@ package com.goodgame.profiling.drains;
 import java.io.IOException;
 import java.util.List;
 
-import com.goodgame.profiling.commons.model.Metric;
+import io.bifroest.commons.model.Metric;
+
 
 public abstract class AbstractWrappingDrain implements Drain {
     protected final Drain inner;

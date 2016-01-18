@@ -7,12 +7,13 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.kohsuke.MetaInfServices;
 
-import com.goodgame.profiling.commons.boot.interfaces.Environment;
-import com.goodgame.profiling.commons.statistics.units.SI_PREFIX;
-import com.goodgame.profiling.commons.statistics.units.TIME_UNIT;
-import com.goodgame.profiling.commons.statistics.units.parse.TimeUnitParser;
 import com.goodgame.profiling.drains.Drain;
 import com.goodgame.profiling.drains.DrainWrapperFactory;
+
+import io.bifroest.commons.boot.interfaces.Environment;
+import io.bifroest.commons.statistics.units.SI_PREFIX;
+import io.bifroest.commons.statistics.units.TIME_UNIT;
+import io.bifroest.commons.statistics.units.parse.TimeUnitParser;
 
 @MetaInfServices
 public class BufferingDrainFactory<E extends Environment> implements DrainWrapperFactory<E> {

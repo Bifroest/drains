@@ -6,9 +6,10 @@ import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import com.goodgame.profiling.commons.model.Metric;
-import com.goodgame.profiling.commons.util.json.JSONClient;
 import com.goodgame.profiling.drains.AbstractBasicDrain;
+
+import io.bifroest.commons.model.Metric;
+import io.bifroest.commons.util.json.JSONClient;
 
 public final class BifroestDrain extends AbstractBasicDrain {
     private final JSONClient bifroest;

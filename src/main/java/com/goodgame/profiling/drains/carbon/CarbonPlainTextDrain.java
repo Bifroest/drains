@@ -6,11 +6,12 @@ import java.io.Writer;
 import java.net.Socket;
 import java.util.List;
 
-import com.goodgame.profiling.commons.model.Metric;
 import com.goodgame.profiling.dns.DNSJavaDNSClient;
 import com.goodgame.profiling.dns.DNSRoundRobin;
 import com.goodgame.profiling.dns.EndPoint;
 import com.goodgame.profiling.drains.AbstractBasicDrain;
+
+import io.bifroest.commons.model.Metric;
 
 public class CarbonPlainTextDrain extends AbstractBasicDrain {
     private final DNSRoundRobin rr;

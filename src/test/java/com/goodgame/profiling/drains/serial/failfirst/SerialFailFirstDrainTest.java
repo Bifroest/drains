@@ -12,9 +12,9 @@ import java.util.List;
 
 import org.junit.Test;
 
-import com.goodgame.profiling.commons.model.Metric;
 import com.goodgame.profiling.drains.Drain;
-import com.goodgame.profiling.drains.serial.failfirst.SerialFailFirstDrain;
+
+import io.bifroest.commons.model.Metric;
 
 public class SerialFailFirstDrainTest {
     @Test

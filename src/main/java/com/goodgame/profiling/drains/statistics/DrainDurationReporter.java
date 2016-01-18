@@ -5,12 +5,14 @@
  */
 package com.goodgame.profiling.drains.statistics;
 
-import com.goodgame.profiling.commons.statistics.WriteToStorageEvent;
-import com.goodgame.profiling.commons.statistics.duration.PartitionedDurationStatistics;
-import com.goodgame.profiling.commons.statistics.eventbus.EventBusManager;
-import com.goodgame.profiling.commons.statistics.eventbus.EventBusRegistrationPoint;
-import com.goodgame.profiling.commons.statistics.gathering.StatisticGatherer;
+
 import org.kohsuke.MetaInfServices;
+
+import io.bifroest.commons.statistics.WriteToStorageEvent;
+import io.bifroest.commons.statistics.duration.PartitionedDurationStatistics;
+import io.bifroest.commons.statistics.eventbus.EventBusManager;
+import io.bifroest.commons.statistics.eventbus.EventBusRegistrationPoint;
+import io.bifroest.commons.statistics.gathering.StatisticGatherer;
 
 /**
  *

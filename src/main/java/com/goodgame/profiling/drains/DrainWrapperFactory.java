@@ -1,9 +1,11 @@
 package com.goodgame.profiling.drains;
 
-import com.goodgame.profiling.commons.boot.interfaces.Environment;
 import java.util.Collection;
 import java.util.List;
+
 import org.json.JSONObject;
+
+import io.bifroest.commons.boot.interfaces.Environment;
 
 public interface DrainWrapperFactory<E extends Environment> {
     List<Class<? super E>> getRequiredEnvironments();

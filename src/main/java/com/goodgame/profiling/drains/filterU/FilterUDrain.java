@@ -4,9 +4,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.goodgame.profiling.commons.model.Metric;
 import com.goodgame.profiling.drains.AbstractWrappingDrain;
 import com.goodgame.profiling.drains.Drain;
+
+import io.bifroest.commons.model.Metric;
 
 /**
  * A value of "U" means "undefined" in Munin. If a drain cannot handle those,

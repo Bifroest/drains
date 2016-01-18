@@ -3,13 +3,12 @@ package com.goodgame.profiling.drains.statistics;
 import org.json.JSONObject;
 import org.kohsuke.MetaInfServices;
 
-import com.goodgame.profiling.commons.statistics.units.parse.DurationParser;
-import com.goodgame.profiling.commons.systems.configuration.EnvironmentWithJSONConfiguration;
-import com.goodgame.profiling.commons.systems.statistics.EnvironmentWithStatisticsGatherer;
-import com.goodgame.profiling.commons.systems.statistics.push_strategy.StatisticsPushStrategy;
-import com.goodgame.profiling.commons.systems.statistics.push_strategy.StatisticsPushStrategyFactory;
-import com.goodgame.profiling.commons.systems.statistics.push_strategy.with_task.StatisticsPushStrategyWithTask;
-import com.goodgame.profiling.drains.statistics.DirectlyToDrainPushStrategy;
+import io.bifroest.commons.configuration.EnvironmentWithJSONConfiguration;
+import io.bifroest.commons.statistics.EnvironmentWithStatisticsGatherer;
+import io.bifroest.commons.statistics.push_strategy.StatisticsPushStrategy;
+import io.bifroest.commons.statistics.push_strategy.StatisticsPushStrategyFactory;
+import io.bifroest.commons.statistics.push_strategy.with_task.StatisticsPushStrategyWithTask;
+import io.bifroest.commons.statistics.units.parse.DurationParser;
 
 @MetaInfServices
 public class DirectlyToDrainPushStrategyFactory<E extends EnvironmentWithJSONConfiguration & EnvironmentWithStatisticsGatherer> implements StatisticsPushStrategyFactory<E> {

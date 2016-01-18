@@ -3,9 +3,10 @@ package com.goodgame.profiling.drains.chunking;
 import java.io.IOException;
 import java.util.List;
 
-import com.goodgame.profiling.commons.model.Metric;
 import com.goodgame.profiling.drains.AbstractWrappingDrain;
 import com.goodgame.profiling.drains.Drain;
+
+import io.bifroest.commons.model.Metric;
 
 public final class ChunkingDrain extends AbstractWrappingDrain {
     private final int chunkSize;

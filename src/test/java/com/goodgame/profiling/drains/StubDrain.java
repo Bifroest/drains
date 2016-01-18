@@ -4,8 +4,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.goodgame.profiling.commons.model.Metric;
-import com.goodgame.profiling.drains.Drain;
+import io.bifroest.commons.model.Metric;
 
 public class StubDrain implements Drain {
     private boolean flushRemainingBuffersCalled = false;

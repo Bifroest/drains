@@ -12,7 +12,7 @@ import java.time.Instant;
 import org.junit.Test;
 import org.mockito.InOrder;
 
-import com.goodgame.profiling.commons.util.stopwatch.AsyncClock;
+import io.bifroest.commons.util.stopwatch.AsyncClock;
 
 public final class BucketTest {
     private Bucket subject;

@@ -5,7 +5,7 @@ import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.goodgame.profiling.commons.boot.interfaces.Environment;
+import io.bifroest.commons.boot.interfaces.Environment;
 
 public class CarbonPlainTextDrainFactoryTest {
     private CarbonPlainTextDrainFactory<Environment> subject;

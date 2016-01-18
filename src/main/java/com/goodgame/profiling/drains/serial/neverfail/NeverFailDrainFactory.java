@@ -6,9 +6,10 @@ import java.util.List;
 import org.json.JSONObject;
 import org.kohsuke.MetaInfServices;
 
-import com.goodgame.profiling.commons.boot.interfaces.Environment;
 import com.goodgame.profiling.drains.Drain;
 import com.goodgame.profiling.drains.DrainMultipleWrapperFactory;
+
+import io.bifroest.commons.boot.interfaces.Environment;
 
 @MetaInfServices
 public class NeverFailDrainFactory<E extends Environment> implements DrainMultipleWrapperFactory<E> {

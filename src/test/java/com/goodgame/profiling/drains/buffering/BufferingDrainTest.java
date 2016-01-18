@@ -11,9 +11,9 @@ import java.util.List;
 
 import org.junit.Test;
 
-import com.goodgame.profiling.commons.model.Metric;
 import com.goodgame.profiling.drains.StubDrain;
-import com.goodgame.profiling.drains.buffering.BufferingDrain;
+
+import io.bifroest.commons.model.Metric;
 
 public class BufferingDrainTest {
     private StubDrain stub = new StubDrain();

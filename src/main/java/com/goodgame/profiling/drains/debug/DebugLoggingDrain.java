@@ -8,9 +8,10 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.goodgame.profiling.commons.model.Metric;
 import com.goodgame.profiling.drains.AbstractWrappingDrain;
 import com.goodgame.profiling.drains.Drain;
+
+import io.bifroest.commons.model.Metric;
 
 public final class DebugLoggingDrain extends AbstractWrappingDrain {
     private final String grep;

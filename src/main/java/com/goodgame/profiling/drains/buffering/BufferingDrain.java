@@ -1,19 +1,20 @@
 package com.goodgame.profiling.drains.buffering;
 
-import com.goodgame.profiling.commons.logging.LogService;
 
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.goodgame.profiling.commons.model.Metric;
-import com.goodgame.profiling.commons.statistics.units.SI_PREFIX;
-import com.goodgame.profiling.commons.statistics.units.TIME_UNIT;
-import com.goodgame.profiling.commons.statistics.units.format.TimeFormatter;
 import com.goodgame.profiling.drains.AbstractWrappingDrain;
 import com.goodgame.profiling.drains.Drain;
 
 import org.slf4j.Logger;
+
+import io.bifroest.commons.logging.LogService;
+import io.bifroest.commons.model.Metric;
+import io.bifroest.commons.statistics.units.SI_PREFIX;
+import io.bifroest.commons.statistics.units.TIME_UNIT;
+import io.bifroest.commons.statistics.units.format.TimeFormatter;
 
 public class BufferingDrain extends AbstractWrappingDrain {
     private static final Logger log = LogService.getLogger(BufferingDrain.class);

@@ -6,8 +6,9 @@ import java.util.List;
 import org.json.JSONObject;
 import org.kohsuke.MetaInfServices;
 
-import com.goodgame.profiling.commons.boot.interfaces.Environment;
 import com.goodgame.profiling.drains.BasicDrainFactory;
+
+import io.bifroest.commons.boot.interfaces.Environment;
 
 @MetaInfServices
 public class EmptyDrainFactory<E extends Environment> implements BasicDrainFactory<E> {

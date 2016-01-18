@@ -3,9 +3,10 @@ package com.goodgame.profiling.drains.serial.neverfail;
 import java.util.Collection;
 import java.util.List;
 
-import com.goodgame.profiling.commons.model.Metric;
 import com.goodgame.profiling.drains.Drain;
 import com.goodgame.profiling.drains.serial.AbstractSerialDrain;
+
+import io.bifroest.commons.model.Metric;
 
 public final class SerialNeverFailDrain extends AbstractSerialDrain {
     public SerialNeverFailDrain( Collection<Drain> subs ) {
